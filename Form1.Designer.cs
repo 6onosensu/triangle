@@ -39,6 +39,12 @@
             this.txt_a = new System.Windows.Forms.TextBox();
             this.txt_b = new System.Windows.Forms.TextBox();
             this.txt_c = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.s = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.h = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.perimeter = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // calculate_btn
@@ -131,12 +137,70 @@
             this.txt_c.Size = new System.Drawing.Size(63, 20);
             this.txt_c.TabIndex = 7;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label1.Location = new System.Drawing.Point(38, 133);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 20);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Area S:";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // s
+            // 
+            this.s.Location = new System.Drawing.Point(106, 135);
+            this.s.Name = "s";
+            this.s.Size = new System.Drawing.Size(63, 20);
+            this.s.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label2.Location = new System.Drawing.Point(78, 173);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(22, 20);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "h:";
+            // 
+            // h
+            // 
+            this.h.Location = new System.Drawing.Point(106, 175);
+            this.h.Name = "h";
+            this.h.Size = new System.Drawing.Size(63, 20);
+            this.h.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label3.Location = new System.Drawing.Point(19, 212);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 20);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Perimeter:";
+            // 
+            // perimeter
+            // 
+            this.perimeter.Location = new System.Drawing.Point(106, 214);
+            this.perimeter.Name = "perimeter";
+            this.perimeter.Size = new System.Drawing.Size(63, 20);
+            this.perimeter.TabIndex = 13;
+            // 
             // Triangle_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(884, 461);
+            this.Controls.Add(this.perimeter);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.h);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.s);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_c);
             this.Controls.Add(this.txt_b);
             this.Controls.Add(this.txt_a);
@@ -167,6 +231,12 @@
         private System.Windows.Forms.TextBox txt_a;
         private System.Windows.Forms.TextBox txt_b;
         private System.Windows.Forms.TextBox txt_c;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox s;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox h;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox perimeter;
     }
 }
 

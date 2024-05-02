@@ -43,17 +43,20 @@ namespace triangle
                 lv.Items[1].SubItems.Add(t.OutputB());
                 lv.Items.Add("side C");
                 lv.Items[2].SubItems.Add(t.OutputC());
-                
                 lv.Items.Add("Perimeter");
                 //lv.Items[3].SubItems.Add(t.Perimeter());
                 lv.Items.Add("Area");
-                //lv.Items[4].SubItems.Add(t.Area());
 
             }
             catch (Exception)
             {
                 Console.WriteLine("Something went wrong!");
             }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

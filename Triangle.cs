@@ -15,6 +15,7 @@ namespace triangle
             this.A = a;
             this.B = b;
             this.C = c;
+
         }
         // A equilateral triangle
         public Triangle(double side)
