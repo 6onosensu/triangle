@@ -40,7 +40,7 @@
             this.txt_b = new System.Windows.Forms.TextBox();
             this.txt_c = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.s = new System.Windows.Forms.TextBox();
+            this.area = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.h = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@
             this.calculate_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.calculate_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.calculate_btn.ForeColor = System.Drawing.Color.White;
-            this.calculate_btn.Location = new System.Drawing.Point(733, 398);
+            this.calculate_btn.Location = new System.Drawing.Point(369, 250);
             this.calculate_btn.Name = "calculate_btn";
             this.calculate_btn.Size = new System.Drawing.Size(123, 40);
             this.calculate_btn.TabIndex = 0;
@@ -68,9 +68,9 @@
             this.Parameter,
             this.Value});
             this.lv.HideSelection = false;
-            this.lv.Location = new System.Drawing.Point(648, 23);
+            this.lv.Location = new System.Drawing.Point(311, 23);
             this.lv.Name = "lv";
-            this.lv.Size = new System.Drawing.Size(208, 369);
+            this.lv.Size = new System.Drawing.Size(212, 211);
             this.lv.TabIndex = 1;
             this.lv.UseCompatibleStateImageBehavior = false;
             this.lv.View = System.Windows.Forms.View.Details;
@@ -146,14 +146,13 @@
             this.label1.Size = new System.Drawing.Size(62, 20);
             this.label1.TabIndex = 8;
             this.label1.Text = "Area S:";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // s
+            // area
             // 
-            this.s.Location = new System.Drawing.Point(106, 135);
-            this.s.Name = "s";
-            this.s.Size = new System.Drawing.Size(63, 20);
-            this.s.TabIndex = 9;
+            this.area.Location = new System.Drawing.Point(106, 135);
+            this.area.Name = "area";
+            this.area.Size = new System.Drawing.Size(63, 20);
+            this.area.TabIndex = 9;
             // 
             // label2
             // 
@@ -194,12 +193,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(884, 461);
+            this.ClientSize = new System.Drawing.Size(543, 313);
             this.Controls.Add(this.perimeter);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.h);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.s);
+            this.Controls.Add(this.area);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_c);
             this.Controls.Add(this.txt_b);
@@ -232,7 +231,7 @@
         private System.Windows.Forms.TextBox txt_b;
         private System.Windows.Forms.TextBox txt_c;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox s;
+        private System.Windows.Forms.TextBox area;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox h;
         private System.Windows.Forms.Label label3;

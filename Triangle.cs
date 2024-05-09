@@ -8,7 +8,7 @@ namespace triangle
 {
     internal class Triangle
     {
-        public double A, B, C, S, H, side;
+        public double A, B, C, P, S, H, side;
         public Triangle() { }
         public Triangle(double a, double b, double c)
         {
@@ -29,14 +29,15 @@ namespace triangle
             this.S = s;
             this.A = a;
         }
-        public bool isTriangle 
+        public bool IsTriangle 
         { 
             get
             {
-                if (A + B > C && A + B + C > B && B + C > A) return true;
+                if ((A + B > C) && (A + C > B) && (B + C > A)) return true;
                 else return false;
             }
         }
+
         public double GetSetA 
         { 
             get { return A; }
@@ -57,11 +58,17 @@ namespace triangle
             get { return S; }
             set { S = value; }
         }
+
+        public double GetSetP
+        {
+            get { return P; }
+            set { P = value; }
+        }
         public string TriangleType 
         { 
             get 
             {
-                if (isTriangle) 
+                if (IsTriangle) 
                 {
                     if (A == B && B == C && A == C) return "equilateral triangle";
                     else if (A == B || A == C || B == C) return "Isosceles triangle";
@@ -71,29 +78,30 @@ namespace triangle
                 return "unknown type";
             } 
         }
-        public double Perimeter() { return A + B + C; }
+        public double Perimeter() 
+        {
+            return A + B + C; 
+        }
         public double PerimeterHalf() { return (A + B + C) / 2; }
         public double Area() 
         {
             S = 0;
-            if (isTriangle)
+            if (IsTriangle)
             {
                 double p = (A + B + C) / 2;
                 S = Math.Sqrt(p * (p - A) * (p - B) * (p - C));
             }
-            return S;
+            return Math.Round(S, 3);
         }
-        public string OutputA()
-        {
-            return A.ToString();
-        }
-        public string OutputB() 
+        public double Height(double a, double c, double b) 
         { 
-            return B.ToString();
+            S = Area();
+            H = 2 * S * (S - a) * (S - b) * (S - c) * b;
+            return Math.Round(H, 3);
         }
-        public string OutputC()
+        public string OutputVar(double variable)
         {
-            return C.ToString();
+            return variable.ToString();
         }
     }
 }
